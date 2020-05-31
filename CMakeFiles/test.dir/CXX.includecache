@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vilingif/Desktop/serverFrame/tests/test.cc
+iostream
+-
+vilin/log/log.h
+/home/vilingif/Desktop/serverFrame/tests/vilin/log/log.h
+
+vilin/log/log.h
+string
+-
+stdint.h
+-
+memory
+-
+list
+-
+sstream
+-
+fstream
+-
+vector
+-
+
