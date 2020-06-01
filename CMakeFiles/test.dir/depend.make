@@ -3,4 +3,6 @@
 
 CMakeFiles/test.dir/tests/test.cc.o: tests/test.cc
 CMakeFiles/test.dir/tests/test.cc.o: vilin/log/log.h
+CMakeFiles/test.dir/tests/test.cc.o: vilin/singleton.h
+CMakeFiles/test.dir/tests/test.cc.o: vilin/util.h
 

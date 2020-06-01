@@ -4,3 +4,8 @@
 CMakeFiles/vilin.dir/vilin/log/log.cc.o
  /home/vilingif/Desktop/serverFrame/vilin/log/log.cc
  /home/vilingif/Desktop/serverFrame/vilin/log/log.h
+ /home/vilingif/Desktop/serverFrame/vilin/util.h
+ vilin/singleton.h
+CMakeFiles/vilin.dir/vilin/util.cc.o
+ /home/vilingif/Desktop/serverFrame/vilin/util.cc
+ /home/vilingif/Desktop/serverFrame/vilin/util.h

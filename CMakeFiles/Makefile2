@@ -104,7 +104,7 @@ CMakeFiles/test.dir/all: CMakeFiles/vilin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 0
 .PHONY : CMakeFiles/test.dir/rule
@@ -126,12 +126,12 @@ CMakeFiles/test.dir/clean:
 CMakeFiles/vilin.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vilingif/Desktop/serverFrame/CMakeFiles --progress-num=3,4 "Built target vilin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vilingif/Desktop/serverFrame/CMakeFiles --progress-num=3,4,5 "Built target vilin"
 .PHONY : CMakeFiles/vilin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/vilin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/vilin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 0
 .PHONY : CMakeFiles/vilin.dir/rule

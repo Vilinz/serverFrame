@@ -213,6 +213,33 @@ vilin/log/log.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/vilin/log/log.cc.s
 .PHONY : vilin/log/log.cc.s
 
+vilin/util.o: vilin/util.cc.o
+
+.PHONY : vilin/util.o
+
+# target to build an object file
+vilin/util.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/vilin/util.cc.o
+.PHONY : vilin/util.cc.o
+
+vilin/util.i: vilin/util.cc.i
+
+.PHONY : vilin/util.i
+
+# target to preprocess a source file
+vilin/util.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/vilin/util.cc.i
+.PHONY : vilin/util.cc.i
+
+vilin/util.s: vilin/util.cc.s
+
+.PHONY : vilin/util.s
+
+# target to generate assembly for a file
+vilin/util.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/vilin/util.cc.s
+.PHONY : vilin/util.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -229,6 +256,9 @@ help:
 	@echo "... vilin/log/log.o"
 	@echo "... vilin/log/log.i"
 	@echo "... vilin/log/log.s"
+	@echo "... vilin/util.o"
+	@echo "... vilin/util.i"
+	@echo "... vilin/util.s"
 .PHONY : help
 
 

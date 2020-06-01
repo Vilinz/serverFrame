@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vilingif/Desktop/serverFrame/vilin/log/log.cc" "/home/vilingif/Desktop/serverFrame/CMakeFiles/vilin.dir/vilin/log/log.cc.o"
+  "/home/vilingif/Desktop/serverFrame/vilin/util.cc" "/home/vilingif/Desktop/serverFrame/CMakeFiles/vilin.dir/vilin/util.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

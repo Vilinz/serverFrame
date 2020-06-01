@@ -3,4 +3,9 @@
 
 CMakeFiles/vilin.dir/vilin/log/log.cc.o: vilin/log/log.cc
 CMakeFiles/vilin.dir/vilin/log/log.cc.o: vilin/log/log.h
+CMakeFiles/vilin.dir/vilin/log/log.cc.o: vilin/util.h
+CMakeFiles/vilin.dir/vilin/log/log.cc.o: vilin/singleton.h
+
+CMakeFiles/vilin.dir/vilin/util.cc.o: vilin/util.cc
+CMakeFiles/vilin.dir/vilin/util.cc.o: vilin/util.h
 

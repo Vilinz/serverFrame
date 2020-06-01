@@ -9,6 +9,7 @@ include_directories(.)
 
 set(LIB_SRC
 	vilin/log/log.cc
+	vilin/util.cc
 	)
 
 add_library(vilin SHARED ${LIB_SRC})
