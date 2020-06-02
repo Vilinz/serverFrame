@@ -38,6 +38,8 @@
 #define VILIN_LOG_FMT_ERROR(logger, fmt, ...) VILIN_LOG_FMT_LEVEL(logger, vilin::LogLevel::ERROR, fmt, __VA_ARGS__)
 #define VILIN_LOG_FMT_FATAL(logger, fmt, ...) VILIN_LOG_FMT_LEVEL(logger, vilin::LogLevel::FATAL, fmt, __VA_ARGS__)
 
+#define VILIN_LOG_ROOT() vilin::LoggerMgr::GetInstance()->getRoot()
+
 namespace vilin {
 
 class Logger;

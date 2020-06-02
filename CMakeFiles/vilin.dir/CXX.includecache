@@ -6,19 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/vilingif/Desktop/serverFrame/vilin/log/log.cc
-log.h
-/home/vilingif/Desktop/serverFrame/vilin/log/log.h
-map
--
-iostream
--
-functional
--
-time.h
+/home/vilingif/Desktop/serverFrame/vilin/config.cc
+vilin/config.h
+/home/vilingif/Desktop/serverFrame/vilin/vilin/config.h
+utility
 -
 
-/home/vilingif/Desktop/serverFrame/vilin/log/log.h
+vilin/config.h
+memory
+-
+string
+-
+sstream
+-
+yaml-cpp/yaml.h
+-
+boost/lexical_cast.hpp
+-
+vilin/log/log.h
+vilin/vilin/log/log.h
+
+vilin/log/log.h
 iostream
 -
 string
@@ -42,11 +50,15 @@ stdarg.h
 map
 -
 vilin/singleton.h
-/home/vilingif/Desktop/serverFrame/vilin/log/vilin/singleton.h
+vilin/log/vilin/singleton.h
 ./../util.h
-/home/vilingif/Desktop/serverFrame/vilin/util.h
+vilin/util.h
 
-/home/vilingif/Desktop/serverFrame/vilin/util.h
+vilin/singleton.h
+memory
+-
+
+vilin/util.h
 cxxabi.h
 -
 pthread.h
@@ -66,9 +78,5 @@ vector
 string
 -
 iostream
--
-
-vilin/singleton.h
-memory
 -
 

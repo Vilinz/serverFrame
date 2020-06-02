@@ -1,4 +1,5 @@
 /home/vilingif/Desktop/serverFrame/CMakeFiles/rebuild_cache.dir
-/home/vilingif/Desktop/serverFrame/CMakeFiles/edit_cache.dir
-/home/vilingif/Desktop/serverFrame/CMakeFiles/test.dir
 /home/vilingif/Desktop/serverFrame/CMakeFiles/vilin.dir
+/home/vilingif/Desktop/serverFrame/CMakeFiles/test.dir
+/home/vilingif/Desktop/serverFrame/CMakeFiles/test_config.dir
+/home/vilingif/Desktop/serverFrame/CMakeFiles/edit_cache.dir
