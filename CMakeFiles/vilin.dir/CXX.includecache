@@ -25,6 +25,20 @@ boost/lexical_cast.hpp
 -
 vilin/log/log.h
 vilin/vilin/log/log.h
+vector
+-
+map
+-
+set
+-
+list
+-
+unordered_map
+-
+unordered_set
+-
+functional
+-
 
 vilin/log/log.h
 iostream
