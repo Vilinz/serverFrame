@@ -39,6 +39,7 @@
 #define VILIN_LOG_FMT_FATAL(logger, fmt, ...) VILIN_LOG_FMT_LEVEL(logger, vilin::LogLevel::FATAL, fmt, __VA_ARGS__)
 
 #define VILIN_LOG_ROOT() vilin::LoggerMgr::GetInstance()->getRoot()
+#define VILIN_LOG_NAME(name) vilin::LoggerMgr::GetInstance()->getLogger(name)
 
 namespace vilin {
 
@@ -56,6 +57,7 @@ public:
 	};
 
 	static const char* ToString(LogLevel::Level level);
+	static Level FromString(const std::string& str);
 };
 
 class LogEvent {
@@ -134,6 +136,7 @@ public:
 	virtual ~LogAppender() {}
 
 	virtual void log(std::shared_ptr<Logger> logger, LogLevel::Level, LogEvent::ptr event) = 0;
+	virtual std::string toYamlString() = 0;
 
 	void setFormatter(LogFormatter::ptr val);
 	LogFormatter::ptr getFormatter() const;
@@ -175,6 +178,8 @@ public:
 	void setFormatter(const std::string& val);
 
 	LogFormatter::ptr getFormatter();
+
+	std::string toYamlString();
 private:
 	std::string m_name;
 	LogLevel::Level m_level;
@@ -188,6 +193,7 @@ class StdoutLogAppender : public LogAppender {
 public:
 	typedef std::shared_ptr<StdoutLogAppender> ptr;
 	void log(Logger::ptr logger, LogLevel::Level, LogEvent::ptr event) override;
+	std::string toYamlString() override;
 };
 
 class FileLogAppender : public LogAppender {
@@ -195,6 +201,7 @@ public:
 	typedef std::shared_ptr<FileLogAppender> ptr;
 	FileLogAppender(const std::string &filename);
 	void log(Logger::ptr logger, LogLevel::Level, LogEvent::ptr event) override;
+	std::string toYamlString() override;
 
 	bool reopen();
 private:
@@ -211,6 +218,8 @@ public:
 	void init();
 
 	Logger::ptr getRoot() const { return m_root; }
+
+	std::string toYamlString();
 private:
 	std::map<std::string, Logger::ptr> m_loggers;
 	Logger::ptr m_root;

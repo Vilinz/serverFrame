@@ -44,7 +44,7 @@ void print_yaml(const YAML::Node& node, int level) {
 }
 
 void test_yaml() {
-	YAML::Node root = YAML::LoadFile("/home/vilingif/Desktop/serverFrame/bin/conf/log.yml");
+	YAML::Node root = YAML::LoadFile("/home/vilingif/Desktop/serverFrame/bin/conf/test.yml");
 	print_yaml(root, 0);
 
 	VILIN_LOG_INFO(VILIN_LOG_ROOT()) << root.Scalar();
@@ -79,7 +79,7 @@ void test_config() {
 	XX_M(g_str_int_map_value_config, str_int_map, before);
 	XX_M(g_str_int_umap_value_config, str_int_umap, before);
 
-	YAML::Node root = YAML::LoadFile("/home/vilingif/Desktop/serverFrame/bin/conf/log.yml");
+	YAML::Node root = YAML::LoadFile("/home/vilingif/Desktop/serverFrame/bin/conf/test.yml");
 	vilin::Config::LoadFromYaml(root);
 
 	VILIN_LOG_INFO(VILIN_LOG_ROOT()) << "after: " << g_int_value_config->getValue();
@@ -174,7 +174,7 @@ void test_class() {
 	XX_PM(g_person_map, "class.map.before");
 	VILIN_LOG_INFO(VILIN_LOG_ROOT()) << "before: " << g_person_vec_map->toString();
 
-	YAML::Node root = YAML::LoadFile("/home/vilingif/Desktop/serverFrame/bin/conf/log.yml");
+	YAML::Node root = YAML::LoadFile("/home/vilingif/Desktop/serverFrame/bin/conf/test.yml");
 	vilin::Config::LoadFromYaml(root);
 
 	VILIN_LOG_INFO(VILIN_LOG_ROOT()) << "after " << g_person->getValue().toString() << " - " << g_person->toString();
@@ -183,11 +183,23 @@ void test_class() {
 	VILIN_LOG_INFO(VILIN_LOG_ROOT()) << "after: " << g_person_vec_map->toString();
 }
 
+void test_log() {
+	static vilin::Logger::ptr system_log = VILIN_LOG_NAME("system");
+	VILIN_LOG_INFO(system_log) << "hello system" << std::endl;
+	std::cout << vilin::LoggerMgr::GetInstance()->toYamlString() << std::endl;
+	YAML::Node root = YAML::LoadFile("/home/vilingif/Desktop/serverFrame/bin/conf/log.yml");
+	vilin::Config::LoadFromYaml(root);
+	std::cout << "=================" << std::endl;
+	std::cout << vilin::LoggerMgr::GetInstance()->toYamlString() << std::endl;
+	VILIN_LOG_INFO(system_log) << "hello system" << std::endl;
+}
+
 int main(int argc, char** argv) {
 	
 
 	//test_yaml();
 	// test_config();
-	test_class();
+	// test_class();
+	test_log();
 	return 0;
 }

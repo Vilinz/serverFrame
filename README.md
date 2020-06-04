@@ -7,7 +7,22 @@ log4j
 Config -> Yaml
 
 配置的事件机制  
-当一个配置项发生变化的时候，可以反向通知对应的代码
+当一个配置项发生变化的时候，可以反向通知对应的代码， 回调
+
+## 日志系统整合配置系统
+```yaml
+logs:
+	- name: root
+		level: (debug,info,warn,fatal)
+		formatter: '%d%T%p%T%t%m%n'
+		appender:
+			- type: (StdoutLogAppender, FileLogAppender)
+				level:
+				file:
+```
+
+## 线程
+
 
 ## 协程库
 

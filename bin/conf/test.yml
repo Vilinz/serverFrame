@@ -1,0 +1,61 @@
+system:
+  port: 9900
+  value: 15
+  int_vec:
+    - 10
+    - 20
+  int_list: [20, 40]
+  int_set: [1, 4, 5, 4]
+  int_uset: [10, 60]
+  str_int_map:
+    k: 30
+    k2: 20
+    k3: 90
+  str_int_umap:
+    k: 5
+    k1: 8
+    k3: 0
+class:
+  person:
+    name: vilin
+    age: 3
+    sex: true
+  map:
+    vilin:
+      name: vilin
+      age: 12
+      sex: true
+    vilin01:
+      name: vilin01
+      age: 18
+      sex: true
+  vec_map:
+    k1: 
+      - name : m1
+        age: 12
+        sex: true
+      - name: m2
+        age: 122
+        sex: false
+    k2: 
+      - name : m11
+        age: 12
+        sex: true
+      - name: m22
+        age: 122
+        sex: false
+logs:
+  - name: root
+    level: info
+    formatter: "%d%T%m%n"
+    appender:
+      - type: FileLogAppender
+        file: log.txt
+      - type: StdoutLogAppender
+  - name: system
+    level: debug
+    formatter: "%d%T%m%n"
+    appender:
+      - type: FileLogAppender
+        file: log.txt
+      - type: StdoutLogAppender

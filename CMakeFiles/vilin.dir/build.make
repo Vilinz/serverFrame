@@ -83,41 +83,41 @@ include CMakeFiles/vilin.dir/flags.make
 CMakeFiles/vilin.dir/vilin/log/log.cc.o: CMakeFiles/vilin.dir/flags.make
 CMakeFiles/vilin.dir/vilin/log/log.cc.o: vilin/log/log.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vilingif/Desktop/serverFrame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/vilin.dir/vilin/log/log.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vilin.dir/vilin/log/log.cc.o -c /home/vilingif/Desktop/serverFrame/vilin/log/log.cc
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"vilin/log/log.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vilin.dir/vilin/log/log.cc.o -c /home/vilingif/Desktop/serverFrame/vilin/log/log.cc
 
 CMakeFiles/vilin.dir/vilin/log/log.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vilin.dir/vilin/log/log.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vilingif/Desktop/serverFrame/vilin/log/log.cc > CMakeFiles/vilin.dir/vilin/log/log.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"vilin/log/log.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vilingif/Desktop/serverFrame/vilin/log/log.cc > CMakeFiles/vilin.dir/vilin/log/log.cc.i
 
 CMakeFiles/vilin.dir/vilin/log/log.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vilin.dir/vilin/log/log.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vilingif/Desktop/serverFrame/vilin/log/log.cc -o CMakeFiles/vilin.dir/vilin/log/log.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"vilin/log/log.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vilingif/Desktop/serverFrame/vilin/log/log.cc -o CMakeFiles/vilin.dir/vilin/log/log.cc.s
 
 CMakeFiles/vilin.dir/vilin/util.cc.o: CMakeFiles/vilin.dir/flags.make
 CMakeFiles/vilin.dir/vilin/util.cc.o: vilin/util.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vilingif/Desktop/serverFrame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/vilin.dir/vilin/util.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vilin.dir/vilin/util.cc.o -c /home/vilingif/Desktop/serverFrame/vilin/util.cc
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"vilin/util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vilin.dir/vilin/util.cc.o -c /home/vilingif/Desktop/serverFrame/vilin/util.cc
 
 CMakeFiles/vilin.dir/vilin/util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vilin.dir/vilin/util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vilingif/Desktop/serverFrame/vilin/util.cc > CMakeFiles/vilin.dir/vilin/util.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"vilin/util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vilingif/Desktop/serverFrame/vilin/util.cc > CMakeFiles/vilin.dir/vilin/util.cc.i
 
 CMakeFiles/vilin.dir/vilin/util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vilin.dir/vilin/util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vilingif/Desktop/serverFrame/vilin/util.cc -o CMakeFiles/vilin.dir/vilin/util.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"vilin/util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vilingif/Desktop/serverFrame/vilin/util.cc -o CMakeFiles/vilin.dir/vilin/util.cc.s
 
 CMakeFiles/vilin.dir/vilin/config.cc.o: CMakeFiles/vilin.dir/flags.make
 CMakeFiles/vilin.dir/vilin/config.cc.o: vilin/config.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vilingif/Desktop/serverFrame/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vilin.dir/vilin/config.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vilin.dir/vilin/config.cc.o -c /home/vilingif/Desktop/serverFrame/vilin/config.cc
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"vilin/config.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vilin.dir/vilin/config.cc.o -c /home/vilingif/Desktop/serverFrame/vilin/config.cc
 
 CMakeFiles/vilin.dir/vilin/config.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vilin.dir/vilin/config.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vilingif/Desktop/serverFrame/vilin/config.cc > CMakeFiles/vilin.dir/vilin/config.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"vilin/config.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vilingif/Desktop/serverFrame/vilin/config.cc > CMakeFiles/vilin.dir/vilin/config.cc.i
 
 CMakeFiles/vilin.dir/vilin/config.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vilin.dir/vilin/config.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vilingif/Desktop/serverFrame/vilin/config.cc -o CMakeFiles/vilin.dir/vilin/config.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"vilin/config.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vilingif/Desktop/serverFrame/vilin/config.cc -o CMakeFiles/vilin.dir/vilin/config.cc.s
 
 # Object files for target vilin
 vilin_OBJECTS = \
