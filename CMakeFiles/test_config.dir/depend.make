@@ -5,5 +5,6 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: tests/test_config.cc
 CMakeFiles/test_config.dir/tests/test_config.cc.o: vilin/config.h
 CMakeFiles/test_config.dir/tests/test_config.cc.o: vilin/log/log.h
 CMakeFiles/test_config.dir/tests/test_config.cc.o: vilin/singleton.h
+CMakeFiles/test_config.dir/tests/test_config.cc.o: vilin/thread.h
 CMakeFiles/test_config.dir/tests/test_config.cc.o: vilin/util.h
 

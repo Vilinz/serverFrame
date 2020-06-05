@@ -147,6 +147,19 @@ vilin/fast:
 .PHONY : vilin/fast
 
 #=============================================================================
+# Target rules for targets named test_config
+
+# Build rule for target.
+test_config: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_config
+.PHONY : test_config
+
+# fast build rule for target.
+test_config/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
+.PHONY : test_config/fast
+
+#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -160,17 +173,17 @@ test/fast:
 .PHONY : test/fast
 
 #=============================================================================
-# Target rules for targets named test_config
+# Target rules for targets named test_thread
 
 # Build rule for target.
-test_config: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_config
-.PHONY : test_config
+test_thread: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_thread
+.PHONY : test_thread
 
 # fast build rule for target.
-test_config/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
-.PHONY : test_config/fast
+test_thread/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
+.PHONY : test_thread/fast
 
 tests/test.o: tests/test.cc.o
 
@@ -226,6 +239,33 @@ tests/test_config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cc.s
 .PHONY : tests/test_config.cc.s
 
+tests/test_thread.o: tests/test_thread.cc.o
+
+.PHONY : tests/test_thread.o
+
+# target to build an object file
+tests/test_thread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cc.o
+.PHONY : tests/test_thread.cc.o
+
+tests/test_thread.i: tests/test_thread.cc.i
+
+.PHONY : tests/test_thread.i
+
+# target to preprocess a source file
+tests/test_thread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cc.i
+.PHONY : tests/test_thread.cc.i
+
+tests/test_thread.s: tests/test_thread.cc.s
+
+.PHONY : tests/test_thread.s
+
+# target to generate assembly for a file
+tests/test_thread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cc.s
+.PHONY : tests/test_thread.cc.s
+
 vilin/config.o: vilin/config.cc.o
 
 .PHONY : vilin/config.o
@@ -280,6 +320,33 @@ vilin/log/log.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/vilin/log/log.cc.s
 .PHONY : vilin/log/log.cc.s
 
+vilin/thread.o: vilin/thread.cc.o
+
+.PHONY : vilin/thread.o
+
+# target to build an object file
+vilin/thread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/vilin/thread.cc.o
+.PHONY : vilin/thread.cc.o
+
+vilin/thread.i: vilin/thread.cc.i
+
+.PHONY : vilin/thread.i
+
+# target to preprocess a source file
+vilin/thread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/vilin/thread.cc.i
+.PHONY : vilin/thread.cc.i
+
+vilin/thread.s: vilin/thread.cc.s
+
+.PHONY : vilin/thread.s
+
+# target to generate assembly for a file
+vilin/thread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/vilin/thread.cc.s
+.PHONY : vilin/thread.cc.s
+
 vilin/util.o: vilin/util.cc.o
 
 .PHONY : vilin/util.o
@@ -317,6 +384,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... test_config"
+	@echo "... test_thread"
 	@echo "... vilin"
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
@@ -324,12 +392,18 @@ help:
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
+	@echo "... tests/test_thread.o"
+	@echo "... tests/test_thread.i"
+	@echo "... tests/test_thread.s"
 	@echo "... vilin/config.o"
 	@echo "... vilin/config.i"
 	@echo "... vilin/config.s"
 	@echo "... vilin/log/log.o"
 	@echo "... vilin/log/log.i"
 	@echo "... vilin/log/log.s"
+	@echo "... vilin/thread.o"
+	@echo "... vilin/thread.i"
+	@echo "... vilin/thread.s"
 	@echo "... vilin/util.o"
 	@echo "... vilin/util.i"
 	@echo "... vilin/util.s"

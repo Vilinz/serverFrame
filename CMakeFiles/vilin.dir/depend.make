@@ -5,6 +5,7 @@ CMakeFiles/vilin.dir/vilin/config.cc.o: vilin/config.cc
 CMakeFiles/vilin.dir/vilin/config.cc.o: vilin/config.h
 CMakeFiles/vilin.dir/vilin/config.cc.o: vilin/log/log.h
 CMakeFiles/vilin.dir/vilin/config.cc.o: vilin/singleton.h
+CMakeFiles/vilin.dir/vilin/config.cc.o: vilin/thread.h
 CMakeFiles/vilin.dir/vilin/config.cc.o: vilin/util.h
 
 CMakeFiles/vilin.dir/vilin/log/log.cc.o: vilin/log/log.cc
@@ -13,6 +14,15 @@ CMakeFiles/vilin.dir/vilin/log/log.cc.o: vilin/util.h
 CMakeFiles/vilin.dir/vilin/log/log.cc.o: vilin/config.h
 CMakeFiles/vilin.dir/vilin/log/log.cc.o: vilin/log/log.h
 CMakeFiles/vilin.dir/vilin/log/log.cc.o: vilin/singleton.h
+CMakeFiles/vilin.dir/vilin/log/log.cc.o: vilin/thread.h
+
+CMakeFiles/vilin.dir/vilin/thread.cc.o: vilin/thread.cc
+CMakeFiles/vilin.dir/vilin/thread.cc.o: vilin/thread.h
+CMakeFiles/vilin.dir/vilin/thread.cc.o: vilin/util.h
+CMakeFiles/vilin.dir/vilin/thread.cc.o: vilin/log/log.h
+CMakeFiles/vilin.dir/vilin/thread.cc.o: vilin/singleton.h
+CMakeFiles/vilin.dir/vilin/thread.cc.o: vilin/thread.h
+CMakeFiles/vilin.dir/vilin/thread.cc.o: vilin/util.h
 
 CMakeFiles/vilin.dir/vilin/util.cc.o: vilin/util.cc
 CMakeFiles/vilin.dir/vilin/util.cc.o: vilin/util.h

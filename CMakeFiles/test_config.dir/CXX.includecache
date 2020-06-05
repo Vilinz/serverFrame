@@ -69,9 +69,25 @@ vilin/singleton.h
 vilin/log/vilin/singleton.h
 ./../util.h
 vilin/util.h
+vilin/thread.h
+vilin/log/vilin/thread.h
 
 vilin/singleton.h
 memory
+-
+
+vilin/thread.h
+thread
+-
+functional
+-
+memory
+-
+pthread.h
+-
+stdint.h
+-
+semaphore.h
 -
 
 vilin/util.h

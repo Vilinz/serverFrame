@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vilingif/Desktop/serverFrame/vilin/config.cc" "/home/vilingif/Desktop/serverFrame/CMakeFiles/vilin.dir/vilin/config.cc.o"
   "/home/vilingif/Desktop/serverFrame/vilin/log/log.cc" "/home/vilingif/Desktop/serverFrame/CMakeFiles/vilin.dir/vilin/log/log.cc.o"
+  "/home/vilingif/Desktop/serverFrame/vilin/thread.cc" "/home/vilingif/Desktop/serverFrame/CMakeFiles/vilin.dir/vilin/thread.cc.o"
   "/home/vilingif/Desktop/serverFrame/vilin/util.cc" "/home/vilingif/Desktop/serverFrame/CMakeFiles/vilin.dir/vilin/util.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

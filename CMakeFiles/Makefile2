@@ -77,8 +77,9 @@ CMAKE_BINARY_DIR = /home/vilingif/Desktop/serverFrame
 
 # The main recursive "all" target.
 all: CMakeFiles/vilin.dir/all
-all: CMakeFiles/test.dir/all
 all: CMakeFiles/test_config.dir/all
+all: CMakeFiles/test.dir/all
+all: CMakeFiles/test_thread.dir/all
 
 .PHONY : all
 
@@ -89,8 +90,9 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/vilin.dir/clean
-clean: CMakeFiles/test.dir/clean
 clean: CMakeFiles/test_config.dir/clean
+clean: CMakeFiles/test.dir/clean
+clean: CMakeFiles/test_thread.dir/clean
 
 .PHONY : clean
 
@@ -101,12 +103,12 @@ clean: CMakeFiles/test_config.dir/clean
 CMakeFiles/vilin.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vilin.dir/build.make CMakeFiles/vilin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vilingif/Desktop/serverFrame/CMakeFiles --progress-num=5,6,7,8 "Built target vilin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vilingif/Desktop/serverFrame/CMakeFiles --progress-num=7,8,9,10,11 "Built target vilin"
 .PHONY : CMakeFiles/vilin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/vilin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/vilin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 0
 .PHONY : CMakeFiles/vilin.dir/rule
@@ -122,6 +124,33 @@ CMakeFiles/vilin.dir/clean:
 .PHONY : CMakeFiles/vilin.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/test_config.dir
+
+# All Build rule for target.
+CMakeFiles/test_config.dir/all: CMakeFiles/vilin.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vilingif/Desktop/serverFrame/CMakeFiles --progress-num=3,4 "Built target test_config"
+.PHONY : CMakeFiles/test_config.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_config.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_config.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 0
+.PHONY : CMakeFiles/test_config.dir/rule
+
+# Convenience name for target.
+test_config: CMakeFiles/test_config.dir/rule
+
+.PHONY : test_config
+
+# clean rule for target.
+CMakeFiles/test_config.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/clean
+.PHONY : CMakeFiles/test_config.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/test.dir
 
 # All Build rule for target.
@@ -133,7 +162,7 @@ CMakeFiles/test.dir/all: CMakeFiles/vilin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 0
 .PHONY : CMakeFiles/test.dir/rule
@@ -149,31 +178,31 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_config.dir
+# Target rules for target CMakeFiles/test_thread.dir
 
 # All Build rule for target.
-CMakeFiles/test_config.dir/all: CMakeFiles/vilin.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vilingif/Desktop/serverFrame/CMakeFiles --progress-num=3,4 "Built target test_config"
-.PHONY : CMakeFiles/test_config.dir/all
+CMakeFiles/test_thread.dir/all: CMakeFiles/vilin.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vilingif/Desktop/serverFrame/CMakeFiles --progress-num=5,6 "Built target test_thread"
+.PHONY : CMakeFiles/test_thread.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_config.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_config.dir/all
+CMakeFiles/test_thread.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_thread.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vilingif/Desktop/serverFrame/CMakeFiles 0
-.PHONY : CMakeFiles/test_config.dir/rule
+.PHONY : CMakeFiles/test_thread.dir/rule
 
 # Convenience name for target.
-test_config: CMakeFiles/test_config.dir/rule
+test_thread: CMakeFiles/test_thread.dir/rule
 
-.PHONY : test_config
+.PHONY : test_thread
 
 # clean rule for target.
-CMakeFiles/test_config.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/clean
-.PHONY : CMakeFiles/test_config.dir/clean
+CMakeFiles/test_thread.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/clean
+.PHONY : CMakeFiles/test_thread.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vilin.dir/vilin/config.cc.o"
   "CMakeFiles/vilin.dir/vilin/log/log.cc.o"
+  "CMakeFiles/vilin.dir/vilin/thread.cc.o"
   "CMakeFiles/vilin.dir/vilin/util.cc.o"
   "lib/libvilin.pdb"
   "lib/libvilin.so"

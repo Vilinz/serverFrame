@@ -6,6 +6,7 @@ CMakeFiles/vilin.dir/vilin/config.cc.o
  vilin/config.h
  vilin/log/log.h
  vilin/singleton.h
+ vilin/thread.h
  vilin/util.h
 CMakeFiles/vilin.dir/vilin/log/log.cc.o
  /home/vilingif/Desktop/serverFrame/vilin/log/log.cc
@@ -14,6 +15,15 @@ CMakeFiles/vilin.dir/vilin/log/log.cc.o
  vilin/config.h
  vilin/log/log.h
  vilin/singleton.h
+ vilin/thread.h
+CMakeFiles/vilin.dir/vilin/thread.cc.o
+ /home/vilingif/Desktop/serverFrame/vilin/thread.cc
+ /home/vilingif/Desktop/serverFrame/vilin/thread.h
+ /home/vilingif/Desktop/serverFrame/vilin/util.h
+ vilin/log/log.h
+ vilin/singleton.h
+ vilin/thread.h
+ vilin/util.h
 CMakeFiles/vilin.dir/vilin/util.cc.o
  /home/vilingif/Desktop/serverFrame/vilin/util.cc
  /home/vilingif/Desktop/serverFrame/vilin/util.h
